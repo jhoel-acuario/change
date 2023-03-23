@@ -1,0 +1,74 @@
+<mat-nav-list>
+  <div class="logo" style="text-align: center; font-weight: bold;">
+    JHOEL
+  </div>
+  <mat-divider></mat-divider>
+  <a  mat-list-item [routerLink]="['onchange']">
+    <mat-icon>person</mat-icon>selectionChange
+  </a>
+  <a  mat-list-item>
+    <mat-icon>manage_accounts</mat-icon>Setting
+  </a>
+
+</mat-nav-list>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<mat-drawer-container class="nav"> -->
+  <!-- <mat-form-field  >
+    <mat-label>Rol: </mat-label>
+    <mat-select  [(ngModel)]="selectedRole" (change)="onRoleSelected($event)">
+      <option value="" [defaultSelected]="">-- Seleccione un rol --</option>
+      <mat-option *ngFor="let item of data" [value]="item.id_rol">
+        {{item.nombre_rol}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field> -->
+
+<!--    <mat-label>Rol: </mat-label>
+    <select
+    [(ngModel)]="selectedRole"
+    (change)="onRoleSelected($event)"
+  >
+    <option value="">-- Seleccione un rol --</option>
+    <option *ngFor="let item of data" [value]="item.id_rol">
+      {{ item.nombre_rol }}
+    </option>
+  </select>
+
+  <br />
+  <div *ngIf="showSedes">
+    <mat-label>Sede: </mat-label>
+
+      <select >
+        <option *ngFor="let item of Rolsedes" [value]="item.id_sede">
+          {{ item }}
+        </option>
+      </select>
+
+
+  </div>
+</mat-drawer-container>
+
+
+ -->

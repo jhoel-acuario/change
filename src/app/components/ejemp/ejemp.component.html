@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <mat-label>Rol: </mat-label>
+    <mat-form-field>
+      <mat-label>Selecciona una opción</mat-label>
+      <mat-select (selectionChange)="RoleSelected($event.value)" [(ngModel)]="selectedValue" >
+        <mat-option *ngFor="let item of data" [value]="item.id_rol">{{item?.nombre_rol}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="row" *ngIf="showSedes">
+    <mat-label>Sede: </mat-label>
+    <mat-form-field>
+      <mat-select [(ngModel)]="selectedSede" >
+        <mat-option *ngFor="let item of Rolsedes" [value]="item.nombre_sede">{{item.nombre_sede}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+</div>

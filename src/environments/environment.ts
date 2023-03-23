@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+   API : "https://api.npoint.io/c2b79ec94e5abdf80b74"
 };
 
 /*
